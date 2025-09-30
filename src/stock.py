@@ -14,18 +14,21 @@ def supprimer_produit(nom):
             break
         else:
             print("le nom de produit n'exist pas")
-
+    
 
 def mettre_a_jour(nom):
     global produits
+    status = True
     for i in range(len(produits)):
         if produits[i][0].upper() == nom.upper():
             x = int(input("entre nouvel quantité: "))
             produits[i][1]=x
             print(f"mettre a jour la quantité de {produits[i][0]}")
+            status = False
             break
-        else:
-            print("le nom qui vous entrez n'est pas exist")
+        
+    if status:
+        print("le nom qui vous entrez n'est pas exist")
 
 
 
