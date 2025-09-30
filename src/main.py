@@ -1,3 +1,4 @@
+
 from stock import ajouter_produit , afficher
 
 
@@ -22,3 +23,4 @@ def menu():
 
 
 menu()
+

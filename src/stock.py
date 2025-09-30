@@ -1,3 +1,4 @@
+
 import numpy as np
 
 def ajouter_produit():
@@ -14,5 +15,6 @@ def afficher():
     for item in produits :
         print(item)
     
+
 
 
